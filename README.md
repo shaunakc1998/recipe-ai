@@ -20,7 +20,46 @@ The tool outputs:
 4. **Detailed Recipe Kit**: The tool outputs detailed recipes with ingredient lists, preparation time estimates, and mood-based explanations for each dish.
 
 ### Features
-- **Custom Logo Generation**: Automatically generate logos based on your brand's identity and industry using OpenAI's DALL-E.
-- **Brand Kit Creation**: Get recommendations on color schemes, fonts, and taglines based on the personality and industry of your brand.
-- **Brand Similarity Search**: Compare your brand with similar ones in the market using Pinecone's vector search.
-- **Intuitive UI**: A clean, user-friendly interface built with Streamlit makes the process easy and interactive.
+- **Personalized Recipe Generation**: Automatically generate recipes based on your mood, preferred cuisine, and season using Anthropic's Claude AI.
+- **Recipe Kit Creation**: Get detailed recommendations for ingredients, preparation steps, and cooking methods tailored to your input.
+- **Recipe Similarity Search**: Discover similar recipes using Pinecone's vector search, offering suggestions based on mood, cuisine, and season preferences.
+- **Intuitive UI**: A clean, user-friendly interface built with Streamlit makes the recipe generation process simple and interactive.
+
+## Installation
+1. **Clone the repository**:
+
+   ```bash
+      git clone https://github.com/yourusername/recipe-ai.git
+      cd recipe-ai
+
+2. **Install dependencies**:
+
+   Install the required Python packages by running:
+   ```bash
+   pip install -r requirements.txt
+
+3. **Add your API keys**:
+
+   To use this project, you'll need API keys for the following services:
+
+   Anthropic API (Claude): Used for generating personalized recipe kits.
+   Pinecone API: Used for vector similarity search (recipe similarity).
+
+   ## Adding Your API Keys
+   In app.py and streamlit.py, you'll find placeholders where the API keys are set. Replace the placeholders with your own keys:
+   ```bash
+   # Set your API keys here
+   claude_api_key = "your-anthropic-api-key"  # Replace with your Claude API key
+   pinecone_api_key = "your-pinecone-api-key"  # Replace with your Pinecone API key
+
+4. **Run the Application**:
+   To start the Streamlit app, run the following command:
+   ```bash
+   streamlit run app.py
+
+This will launch the application in your browser, where you can input your mood, cuisine, and season to generate personalized recipes.
+
+## Usage
+- Input Your Preferences: Fill out the form in the Streamlit app with details about your mood, preferred cuisine, and the current season.
+- Generate a Recipe Kit: Click the "Generate Recipe Kit" button, and the app will generate personalized recipes based on your input.
+- View Recipe Details: You can view recipe recommendations, ingredients, and preparation steps in a user-friendly interface.
