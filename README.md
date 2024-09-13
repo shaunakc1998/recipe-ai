@@ -7,3 +7,9 @@ This project combines multiple AI services to create a seamless brand identity g
 - **Anthropic's Claude** generates personalized recipe kits, including mood-based recipe recommendations, ingredients, and preparation steps based on user input and seasonal preferences.
 - **Pinecone**  is used to find similar recipes through vector similarity search, offering suggestions based on mood, cuisine, and season preferences.
 
+The tool outputs:
+- Recipe suggestions tailored to your mood, cuisine, and season
+- A list of essential ingredients with seasonal and mood-based explanations
+- Estimated preparation time for each recipe
+- A detailed, step-by-step cooking method with optional tips and serving suggestions
+
