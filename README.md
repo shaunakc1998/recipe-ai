@@ -63,3 +63,7 @@ This will launch the application in your browser, where you can input your mood,
 - Input Your Preferences: Fill out the form in the Streamlit app with details about your mood, preferred cuisine, and the current season.
 - Generate a Recipe Kit: Click the "Generate Recipe Kit" button, and the app will generate personalized recipes based on your input.
 - View Recipe Details: You can view recipe recommendations, ingredients, and preparation steps in a user-friendly interface.
+
+## Screenshots
+<img width="804" alt="Screenshot 2024-09-13 at 4 32 23 PM" src="https://github.com/user-attachments/assets/9df142d9-bc23-4e43-b3e1-562153efaae9">
+
