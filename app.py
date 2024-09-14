@@ -23,8 +23,8 @@ index_name = "your-index-name"
 if index_name not in pc.list_indexes().names():
     pc.create_index(
         name=index_name,
-        dimension=768,  # Adjust based on your embedding dimension
-        metric="cosine",  # You can use other metrics like euclidean
+        dimension=768,  
+        metric="cosine",  
         spec=ServerlessSpec(cloud="gcp", region="us-west1")
     )
 
@@ -75,7 +75,6 @@ def combine_input_with_matches(user_input, matches):
     return combined_text
 
 # Function to generate recipes using Claude
-# Function to generate recipes using Claude
 def generate_recipe_kit(combined_input):
     input_text = (
         f"The following is the user-provided information, including their mood, cuisine preference, season, and similar recipe matches from the database:\n\n"
@@ -123,7 +122,7 @@ def format_recipes_output(output_text):
     formatted_recipes = ""
     
     for section in sections:
-        section = section.strip()  # Remove any leading/trailing spaces
+        section = section.strip()  
         
         if "" in section:
             # Handle the Recipe Suggestions
